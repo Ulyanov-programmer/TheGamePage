@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- maximum-scale=1.0, user-scalable=0 does not allow content to be scaled on Android. -->
+  <!-- Disables forced link for phone number on iOS -->
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="description" content="The Game Singlepage">
+  <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
+  <!-- <link rel="preload" href="fonts/YourMainFont.woff2" as="font" crossorigin> -->
+
+  <!-- SEO
+    <meta name="keywords" content="keyword1,">
+    <meta name="robots" content="none,noindex,nofollow,noimageindex,noarchive,nosnippet">
+    <meta name="Author" content="Author">
+    <meta name="Copyright" content="Copyright">
+    <meta name="Address" content="Address"> 
+    <! - Redirect (reload) the page. Delay in seconds; url=Site / page address ->
+    <meta http-equiv="refresh" content="seconds; url = URL">
+
+    Facebook
+    <! - site localization, for the Russian-language site ru_RU ->
+    <meta property="og:locale" content="ru_RU">
+    <! - content type, default is article ->
+    <meta property="og:type" content="article">
+    <! - the title of the page that will be displayed in the post of the social network ->
+    <meta property="og:title" content="META tags">
+    <! - page description ->
+    <meta property="og:description" content="Description of the page about META tags">
+    <! - link to the image that will be published in the post ->
+    <meta property="og:image" content="path">
+    <! - link to the current page ->
+    <meta property="og: url" content="path">
+    <! - site name ->
+    <meta property="og:site_name" content="Freelancer for life">
+
+    Twitter
+    <! - Map type, default is summary ->
+    <meta name="twitter: card" content="summary">
+    <! - Author name / login ->
+    <meta name="twitter: site" content="Ivan">
+    <! - Page title ->
+    <meta name="twitter: title" content="META tags">
+    <! - Page description ->
+    <meta name="twitter: description" content="about META tags">
+    <! - Link to image ->
+    <meta name="twitter: image" content="path">
+  -->
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>TheGame</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__body">
+    <a href="/" class="main-title" aria-label="logo-RefToMainPage">
+      <h1><span class="yellow-text">We</span> create <br> Awesome Games</h1>
+    </a>
+
+    <nav class="navmenu">
+      <div class="navmenu__body">
+        <ul class='navmenu__list'>
+          <li data-scroll-to=".about"><a class="yellow-text" href="#">About</a></li>
+          <li data-scroll-to=".development"><a class="yellow-text" href="#">Development</a></li>
+          <li data-scroll-to=".projects"><a class="yellow-text" href="#">Projects</a></li>
+          <li data-scroll-to=".blog"><a class="yellow-text" href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main class="main">
+    <div class="main__body">
+      <section class='about block'>
+        <div class='about__body'>
+          <div class="about__top">
+            <h2 class='about__title'>About <span class="logo text-underline"><span class="yellow-text">S</span>ublime</span></h2>
+            <div class="about__text-container text-container">
+              <p class="text-container__italic-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+              <p class="text-container__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel,
+                molestie ut
+                ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+                lectus egestas
+                eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus
+                vel, molestie ut
+                ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+                lectus egestas eu
+              </p>
+            </div>
+          </div>
+          <div class="about__bottom advantages">
+            <section class="advantages__item advantage">
+              <div class="advantage__image">
+<picture><source srcset="img/icons/gamepad.avif" type="image/avif"><source srcset="img/icons/gamepad.webp" type="image/webp"><img src="img/icons/gamepad.png" loading='lazy' alt='advantageImg' width=30 height=20></picture>
+              </div>
+              <h3 class="advantage__title">App Development</h3>
+              <p class="advantage__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+            </section>
+            <section class="advantages__item advantage">
+              <div class="advantage__image">
+<picture><source srcset="img/icons/gamepad.avif" type="image/avif"><source srcset="img/icons/gamepad.webp" type="image/webp"><img src="img/icons/gamepad.png" loading='lazy' alt='advantageImg' width=30 height=20></picture>
+              </div>
+              <h3 class="advantage__title">Game Design</h3>
+              <p class="advantage__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+            </section>
+            <section class="advantages__item advantage">
+              <div class="advantage__image">
+<picture><source srcset="img/icons/gamepad.avif" type="image/avif"><source srcset="img/icons/gamepad.webp" type="image/webp"><img src="img/icons/gamepad.png" loading='lazy' alt='advantageImg' width=30 height=20></picture>
+              </div>
+              <h3 class="advantage__title">Content Creation</h3>
+              <p class="advantage__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class='projects block'>
+        <div class='projects__body in-block-container'>
+          <div class="projects__header">
+            <h2 class='projects__title title text-underline'><span class="yellow-text big-word">F</span>eatured <span class="big-word">P</span>rojects
+            </h2>
+            <div class="projects__buttons">
+              <button class='projects__button active projects__main-button' type='button'>All works</button>
+              <button class='projects__button' type='button'>Games</button>
+              <button class='projects__button' type='button'>APPLICATIONS</button>
+              <button class='projects__button' type='button'>CONTENT DEVELOPMENT</button>
+            </div>
+          </div>
+        </div>
+        <div class="projects__gallery gallery">
+          <div class="gallery__item">
+<picture><source srcset="img/game.avif" type="image/avif"><source srcset="img/game.webp" type="image/webp"><img src="img/game.jpg" loading='lazy' alt='game1' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game2.avif" type="image/avif"><source srcset="img/game2.webp" type="image/webp"><img src="img/game2.jpg" loading='lazy' alt='game2' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game3.avif" type="image/avif"><source srcset="img/game3.webp" type="image/webp"><img src="img/game3.jpg" loading='lazy' alt='game3' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game4.avif" type="image/avif"><source srcset="img/game4.webp" type="image/webp"><img src="img/game4.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game5.avif" type="image/avif"><source srcset="img/game5.webp" type="image/webp"><img src="img/game5.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game6.avif" type="image/avif"><source srcset="img/game6.webp" type="image/webp"><img src="img/game6.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game7.avif" type="image/avif"><source srcset="img/game7.webp" type="image/webp"><img src="img/game7.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
+          </div>
+          <div class="gallery__item">
+<picture><source srcset="img/game7.avif" type="image/avif"><source srcset="img/game7.webp" type="image/webp"><img src="img/game7.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
+          </div>
+        </div>
+      </section>
+      <section class='process block'>
+        <div class='process__body in-block-container'>
+          <h2 class='process__title title text-underline'>
+            <span class="yellow-text big-word">S</span>trategic
+            <span class="big-word">P</span>rocess
+          </h2>
+          <div class="process__text text-container">
+            <p class="text-container__italic-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+              Pellentesque quis
+              tristique magna.
+            </p>
+            <p class="text-container__text">
+              Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus vel,
+              molestie ut
+              ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+              lectus egestas
+              eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus
+              vel, molestie ut
+              ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+              lectus egestas
+              eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus
+              vel, molestie ut
+              ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+              lectus egestas
+              eu. Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt rhoncus
+              vel, molestie ut
+              ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam
+              lectus egestas
+              eu.
+            </p>
+          </div>
+          <div class="process__steps">
+            <section class='step'>
+              <div class='step__body'>
+                <div class="step__image">
+<picture><source srcset="img/process1.avif" type="image/avif"><source srcset="img/process1.webp" type="image/webp"><img src="img/process1.jpg" loading='lazy' alt='process' width=430 height=280></picture>
+                </div>
+                <div class="step__main">
+                  <span class='step__title title'>
+                    <span class="big-word">O</span>ur
+                    <span class="big-word">P</span>rocess
+                  </span>
+                  <div class="step__text text-container">
+                    <p class="text-container__italic-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et
+                      euismod. Pellentesque quis
+                      tristique magna.
+                    </p>
+                    <p class="text-container__text">
+                      Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+                      rhoncus vel, molestie ut
+                      ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed
+                      aliquam lectus egestas eu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class='step'>
+              <div class='step__body step__body-reverse'>
+                <div class="step__image">
+<picture><source srcset="img/process2.avif" type="image/avif"><source srcset="img/process2.webp" type="image/webp"><img src="img/process2.jpg" loading='lazy' alt='process' width=430 height=280></picture>
+                </div>
+                <div class="step__main">
+                  <span class='step__title title'>
+                    <span class="big-word">M</span>ethod
+                  </span>
+                  <div class="step__text text-container">
+                    <p class="text-container__italic-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et
+                      euismod. Pellentesque quis
+                      tristique magna.
+                    </p>
+                    <p class="text-container__text">
+                      Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+                      rhoncus vel, molestie ut
+                      ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed
+                      aliquam lectus egestas eu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class='step'>
+              <div class='step__body'>
+                <div class="step__image">
+<picture><source srcset="img/process3.avif" type="image/avif"><source srcset="img/process3.webp" type="image/webp"><img src="img/process3.jpg" loading='lazy' alt='process' width=430 height=280></picture>
+                </div>
+                <div class="step__main">
+                  <span class='step__title title'>
+                    <span class="big-word">O</span>utcome
+                  </span>
+                  <div class="step__text text-container">
+                    <p class="text-container__italic-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et
+                      euismod. Pellentesque quis
+                      tristique magna.
+                    </p>
+                    <p class="text-container__text">
+                      Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+                      rhoncus vel, molestie ut
+                      ligula. Mauris vitae ullamcorper odio. Mauris id enim gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed
+                      aliquam lectus egestas eu
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class='services block'>
+        <div class='services__body in-block-container'>
+          <h2 class='services__title title text-underline'>
+            <span class="yellow-text big-word">S</span>ervices
+            <span class="big-word">P</span>rovided
+          </h2>
+          <div class="services__items">
+            <div class="service">
+              <h4 class="service__title">App Development</h4>
+              <p class="service__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est
+                risus, tristique
+                volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+            <div class="service">
+              <h4 class="service__title">Game Development</h4>
+              <p class="service__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est
+                risus, tristique
+                volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+            <div class="service">
+              <h4 class="service__title">App Design</h4>
+              <p class="service__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est
+                risus, tristique
+                volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+            <div class="service">
+              <h4 class="service__title">Game Design</h4>
+              <p class="service__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt Maecenas est
+                risus, tristique
+                volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='team block'>
+        <div class='team__body in-block-container'>
+          <h2 class='team__title title'>
+            <span class="yellow-text big-word">O</span>ur
+            <span class="text-underline"><span class="big-word">T</span>eam</span>
+          </h2>
+          <div class="team__main">
+            <div class="text-container">
+              <p class="text-container__italic-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+              <p class="text-container__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+            <div class="team__workers">
+              <div class="worker">
+                <div class="worker__body">
+<picture><source srcset="img/worker1.avif" type="image/avif"><source srcset="img/worker1.webp" type="image/webp"><img src="img/worker1.jpg" loading='lazy' alt='workerNameHere' width=180 height=180></picture>
+                  <span class="worker__name">John Doe</span>
+                  <span class="worker__position">CoFounder / CEO</span>
+                </div>
+              </div>
+              <div class="worker">
+                <div class="worker__body">
+<picture><source srcset="img/worker2.avif" type="image/avif"><source srcset="img/worker2.webp" type="image/webp"><img src="img/worker2.jpg" loading='lazy' alt='workerNameHere' width=180 height=180></picture>
+                  <span class="worker__name">John Doe</span>
+                  <span class="worker__position">process Manager</span>
+                </div>
+              </div>
+              <div class="worker">
+                <div class="worker__body">
+<picture><source srcset="img/worker3.avif" type="image/avif"><source srcset="img/worker3.webp" type="image/webp"><img src="img/worker3.jpg" loading='lazy' alt='workerNameHere' width=180 height=180></picture>
+                  <span class="worker__name">John Doe</span>
+                  <span class="worker__position">Sales President</span>
+                </div>
+              </div>
+              <div class="worker">
+                <div class="worker__body">
+<picture><source srcset="img/worker4.avif" type="image/avif"><source srcset="img/worker4.webp" type="image/webp"><img src="img/worker4.jpg" loading='lazy' alt='workerNameHere' width=180 height=180></picture>
+                  <span class="worker__name">John Doe</span>
+                  <span class="worker__position">Developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='testimonials block'>
+        <div class='testimonials__body in-block-container'>
+          <h2 class='testimonials__title title text-underline'>
+            <span class="yellow-text big-word">T</span>estimonials
+          </h2>
+          <div class="testimonials__main">
+            <div class="testimonials__text-container text-container">
+              <p class="text-container__italic-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla pellentesque et nisi et euismod.
+                Pellentesque quis
+                tristique magna.
+              </p>
+              <p class="text-container__text">
+                Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem, molestie tincidunt
+              </p>
+            </div>
+            <div class="testimonials__user user">
+              <div class="user__image-container">
+<picture><source srcset="img/John.avif" type="image/avif"><source srcset="img/John.webp" type="image/webp"><img src="img/John.jpg" loading='lazy' alt='John Doe' width=121 height=121></picture>
+              </div>
+              <div class="user__body">
+                <span class="user__name">John Doe</span>
+                <span class="user__position">CoFounder / CEO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- <footer class="footer">
+  <div class="footer__body container">
+    <div class="contacts-block">
+      <ul class='contacts-block__list list'>
+        <li class='list__item'>
+          <a class="email" target="_blank" href="mailto:ccoldatheinrich@yandex.ru"
+            rel="noopener noreferrer">ccoldatheinrich@yandex.ru</a>
+        </li>
+        <li class='list__item'>
+          <a class="email" target="_blank" href="//github.com/Ulyanov-programmer"
+            rel="noopener noreferrer">Me on GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer> -->
+</body>
+
+
+<script type="module" src="scripts/script.js"></script>
+
+</html>
+
+<!-- 
+  Made in Russia, with ❤, by Ivan Ulyanov. 
+-->

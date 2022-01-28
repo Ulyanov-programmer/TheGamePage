@@ -1,0 +1,62 @@
+.in-block-container
+  margin auto
+  width 90%
+
+.block
+  padding-top 5%
+  padding-bottom 5%
+
+.adaptive-image
+  display block
+  position relative
+  padding 0 0 100% 0
+
+  img
+    position absolute
+    top 0
+    left 0
+    block-size 100% 100%
+    object-fit cover
+
+.logo
+  font-family MyriadPro-sb
+  font-size adapt-fsize(80, 30)
+  color #000
+
+.yellow-text
+  color #ffc600
+
+.big-word
+  font-size 150%
+
+.text-container
+  font-family MyriadPro
+  firstLevelElementsMargin 20
+
+  &__italic-text
+    font-style italic
+    font-size adapt-fsize(16)
+
+  &__text
+    color #595959
+    font-size adapt-fsize(14)
+
+.title
+  display inline-block
+  color #000
+  font-family MyriadPro-sb
+  font-size adapt-fsize(30, 20)
+
+.text-underline
+  position relative
+  width fit-content
+
+  &:after
+    display inline-block
+    position absolute
+    bottom 0
+    right 0
+    width 60%
+    height 1px
+    background #a0a0a0
+    content ''
