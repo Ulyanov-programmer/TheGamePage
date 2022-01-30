@@ -224,15 +224,30 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  text-transform: uppercase;
 }
 
 .footer__nav >*:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.footer__li {
+.footer__nav a {
+  text-transform: uppercase;
   display: inline-block;
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__nav a:hover,
+.footer__nav a:focus {
+  color: #ffc600;
+}
+
+.footer__li {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
   cursor: pointer;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -245,19 +260,6 @@ address {
 
 .footer__li:hover,
 .footer__li:focus {
-  color: #ffc600;
-}
-
-.footer__li a {
-  display: inline-block;
-  color: #fff;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-}
-
-.footer__li a:hover,
-.footer__li a:focus {
   color: #ffc600;
 }
 
@@ -1325,6 +1327,10 @@ body button {
 
   .projects__gallery {
     grid-template: 'game game game' auto/1fr 1fr 1fr;
+  }
+
+  .services__items {
+    margin: 0 5% 5% auto;
   }
 }
 

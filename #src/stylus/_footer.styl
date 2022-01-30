@@ -24,13 +24,23 @@
   &__nav
     flex-set column nowrap
     firstLevelElementsMargin 15
-    text-transform uppercase
 
     @media (max-width 600px)
       flex-content-position center center
 
+    a
+      text-transform uppercase
+      display inline-block
+      color #fff
+      transition all 0.2s ease
+
+      &:hover, &:focus
+        color #ffc600
+
   &__li
+    color: #fff
     display inline-block
+    text-transform uppercase
     cursor pointer
     width max-content
     padding 10px 20px 10px 0
@@ -41,14 +51,6 @@
 
     @media (max-width 600px)
       padding 20px 30px
-
-    a
-      display inline-block
-      color #fff
-      transition all 0.2s ease
-
-      &:hover, &:focus
-        color #ffc600
 
   &__socials
     padding-top 15px

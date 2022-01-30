@@ -19,18 +19,4 @@ let scrollElement = new ScrollElement(
   // '.fixed-header',
 )
 
-// parallax //
-import { Parallax, ParallaxElement } from './modules/parallax.js';
-
-// let someParallaxMenu = new Parallax(
-//   '.fullscreen__body',
-//   768,
-
-//   new ParallaxElement(
-//     '.fullscreen__bg-img', 5),
-//   // another variant 
-//   // new ParallaxElement(
-//   //   document.querySelector<HTMLElement>('.fullscreen__bg-img'), 5),
-// )
-
 //? your scripts //
