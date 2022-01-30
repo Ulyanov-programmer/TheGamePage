@@ -154,39 +154,39 @@
           <div class="projects__header">
             <h2 class='projects__title title text-underline'>
               <span class="yellow-fl big-fl">Featured</span>
-              <span class="big-fl">P</span>rojects
+              <span class="big-fl">Projects</span>
             </h2>
             <div class="projects__buttons">
-              <button class='projects__button active projects__main-button' type='button'>All works</button>
-              <button class='projects__button' type='button'>Games</button>
-              <button class='projects__button' type='button'>APPLICATIONS</button>
-              <button class='projects__button' type='button'>CONTENT DEVELOPMENT</button>
+              <button data-filt-content='all' class='projects__button projects__main-button' type='button'>All works</button>
+              <button data-filt-content='games' class='projects__button' type='button'>Games</button>
+              <button data-filt-content='apps' class='projects__button' type='button'>APPLICATIONS</button>
+              <button data-filt-content='contentdev' class='projects__button' type='button'>CONTENT DEVELOPMENT</button>
             </div>
           </div>
         </div>
         <div class="projects__gallery gallery">
-          <div class="gallery__item">
+          <div data-content-type='games' class="gallery__item">
 <picture><source srcset="img/game.avif" type="image/avif"><source srcset="img/game.webp" type="image/webp"><img src="img/game.jpg" loading='lazy' alt='game1' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='games' class="gallery__item">
 <picture><source srcset="img/game2.avif" type="image/avif"><source srcset="img/game2.webp" type="image/webp"><img src="img/game2.jpg" loading='lazy' alt='game2' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='apps' class="gallery__item">
 <picture><source srcset="img/game3.avif" type="image/avif"><source srcset="img/game3.webp" type="image/webp"><img src="img/game3.jpg" loading='lazy' alt='game3' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='apps' class="gallery__item">
 <picture><source srcset="img/game4.avif" type="image/avif"><source srcset="img/game4.webp" type="image/webp"><img src="img/game4.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='apps' class="gallery__item">
 <picture><source srcset="img/game5.avif" type="image/avif"><source srcset="img/game5.webp" type="image/webp"><img src="img/game5.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='contentdev' class="gallery__item">
 <picture><source srcset="img/game6.avif" type="image/avif"><source srcset="img/game6.webp" type="image/webp"><img src="img/game6.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='contentdev' class="gallery__item">
 <picture><source srcset="img/game7.avif" type="image/avif"><source srcset="img/game7.webp" type="image/webp"><img src="img/game7.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
           </div>
-          <div class="gallery__item">
+          <div data-content-type='contentdev' class="gallery__item">
 <picture><source srcset="img/game7.avif" type="image/avif"><source srcset="img/game7.webp" type="image/webp"><img src="img/game7.jpg" loading='lazy' alt='game4' width=300 height=260></picture>
           </div>
         </div>
@@ -226,7 +226,7 @@
           <div class="process__steps">
             <section class='step'>
               <div class='step__body'>
-                <div class="step__image">
+                <div class="step__image adaptive-image">
 <picture><source srcset="img/process1.avif" type="image/avif"><source srcset="img/process1.webp" type="image/webp"><img src="img/process1.jpg" loading='lazy' alt='process' width=430 height=280></picture>
                 </div>
                 <div class="step__main">
@@ -252,7 +252,7 @@
             </section>
             <section class='step'>
               <div class='step__body step__body-reverse'>
-                <div class="step__image">
+                <div class="step__image  adaptive-image">
 <picture><source srcset="img/process2.avif" type="image/avif"><source srcset="img/process2.webp" type="image/webp"><img src="img/process2.jpg" loading='lazy' alt='process' width=430 height=280></picture>
                 </div>
                 <div class="step__main">
@@ -277,7 +277,7 @@
             </section>
             <section class='step'>
               <div class='step__body'>
-                <div class="step__image">
+                <div class="step__image  adaptive-image">
 <picture><source srcset="img/process3.avif" type="image/avif"><source srcset="img/process3.webp" type="image/webp"><img src="img/process3.jpg" loading='lazy' alt='process' width=430 height=280></picture>
                 </div>
                 <div class="step__main">
@@ -426,54 +426,111 @@
           <nav class="blogs__nav blog-nav">
             <h2 class='blogs__title title yellow-fl big-fl text-underline'>Blogs</h2>
             <div class="blog-nav__buttons">
-              <button class='blog-nav__button' type='button'>Latest Posts</button>
-              <button class='blog-nav__button' type='button'>App Design</button>
-              <button class='blog-nav__button' type='button'>App Development</button>
-              <button class='blog-nav__button' type='button'>Design Solutions</button>
-              <button class='blog-nav__button' type='button'>Quality Assurance</button>
-              <button class='blog-nav__button' type='button'>Development Mode</button>
-              <button class='blog-nav__button' type='button'>What’s Out There</button>
+              <button data-filt-content='last' class='blog-nav__button' type='button'>Latest Posts</button>
+              <button data-filt-content='design' class='blog-nav__button' type='button'>App Design</button>
+              <button data-filt-content='dev' class='blog-nav__button' type='button'>App Development</button>
+              <button data-filt-content='solution' class='blog-nav__button' type='button'>Design Solutions</button>
+              <button data-filt-content='assurance' class='blog-nav__button' type='button'>Quality Assurance</button>
+              <button data-filt-content='devmod' class='blog-nav__button' type='button'>Development Mode</button>
+              <button data-filt-content='whatThere' class='blog-nav__button' type='button'>What’s Out There</button>
             </div>
           </nav>
           <div class="blogs__content">
-            <article class="blogs-content">
-              <div class="blogs-content__image">
+            <article data-content-type='design last' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
 <picture><source srcset="img/blog.avif" type="image/avif"><source srcset="img/blog.webp" type="image/webp"><img src="img/blog.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
-              </div>
-              <div class="blogs-content__body">
-                <span class="blogs-content__date">July 4th 2016</span>
-                <h3 class="blogs-content__title">Lorem Ipsum</h3>
-                <p class="blogs-content__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia illo
-                  quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
-                </p>
-              </div>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">Design Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
             </article>
-            <article class="blogs-content">
-              <div class="blogs-content__image">
+            <article data-content-type='dev last' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
 <picture><source srcset="img/blog2.avif" type="image/avif"><source srcset="img/blog2.webp" type="image/webp"><img src="img/blog2.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
-              </div>
-              <div class="blogs-content__body">
-                <span class="blogs-content__date">July 4th 2016</span>
-                <h3 class="blogs-content__title">Lorem Ipsum</h3>
-                <p class="blogs-content__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia illo
-                  quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
-                </p>
-              </div>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">Dev Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
             </article>
-            <article class="blogs-content">
-              <div class="blogs-content__image">
+            <article data-content-type='solution last' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
 <picture><source srcset="img/blog3.avif" type="image/avif"><source srcset="img/blog3.webp" type="image/webp"><img src="img/blog3.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
-              </div>
-              <div class="blogs-content__body">
-                <span class="blogs-content__date">July 4th 2016</span>
-                <h3 class="blogs-content__title">Lorem Ipsum</h3>
-                <p class="blogs-content__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia illo
-                  quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
-                </p>
-              </div>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">Solution Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article data-content-type='assurance last' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
+<picture><source srcset="img/blog3.avif" type="image/avif"><source srcset="img/blog3.webp" type="image/webp"><img src="img/blog3.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">Assurance Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article data-content-type='devmod' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
+<picture><source srcset="img/blog2.avif" type="image/avif"><source srcset="img/blog2.webp" type="image/webp"><img src="img/blog2.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">Devmod Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article data-content-type='whatThere' class="blogs-content">
+              <a href="#">
+                <div class="blogs-content__image">
+<picture><source srcset="img/blog.avif" type="image/avif"><source srcset="img/blog.webp" type="image/webp"><img src="img/blog.jpg" loading='lazy' alt='content1' width=180 height=206></picture>
+                </div>
+                <div class="blogs-content__body">
+                  <span class="blogs-content__date">July 4th 2016</span>
+                  <h3 class="blogs-content__title">WhatThere Ipsum</h3>
+                  <p class="blogs-content__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quaerat doloribus tempore omnis voluptatum porro aut mollitia
+                    illo
+                    quo itaque adipisci modi, quis iste veniam exercitationem perferendis suscipit dolores! Hic?
+                  </p>
+                </div>
+              </a>
             </article>
           </div>
         </div>
@@ -543,7 +600,7 @@
         <li data-scroll-to='.services' class="footer__li">SERVICES</li>
         <li data-scroll-to='.team' class="footer__li">TEAM</li>
         <li data-scroll-to='.testimonials' class="footer__li">TESTIMONIALS</li>
-        <li data-scroll-to='.blog' class="footer__li">BLOG</li>
+        <li data-scroll-to='.blogs' class="footer__li">BLOG</li>
         <li class="footer__li"><a href="#">CLIENTS</a></li>
         <li data-scroll-to='.contact' class="footer__li">CONTACT US</li>
       </nav>

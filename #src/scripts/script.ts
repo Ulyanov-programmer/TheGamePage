@@ -1,9 +1,13 @@
 // filter //
 import Filter from './modules/filter.js';
 
-let filter = new Filter(
-  '.filter__button',
-  '.filter__item',
+let projectsFilter = new Filter(
+  '.projects__button',
+  '.gallery__item',
+)
+let blogFilter = new Filter(
+  '.blog-nav__button',
+  '.blogs-content',
 )
 
 // scroll-elements //
