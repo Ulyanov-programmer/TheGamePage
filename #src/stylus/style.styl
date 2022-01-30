@@ -30,7 +30,6 @@ body
   width 100%
 
   &__body
-    firstLevelElementsMargin 20
     background var(--bg)
 
 .about
@@ -174,7 +173,7 @@ body
 
 .gallery
   display grid
-  grid-template 'game game game game' 100% / 1fr 1fr 1fr 1fr
+  grid-template 'game game game game' auto / 1fr 1fr 1fr 1fr
 
   &__item
     img
@@ -237,19 +236,22 @@ body
     color #fff
 
   &__items
-    margin-left auto
+    margin 0 5% -10% auto
     flex-set row wrap
+    width 90%
 
-    @media (min-width 768px)
+    @media (min-width 950px)
       width 60%
 
 .service
-  @media (min-width 500px)
-    flex-basis 50%
-
   min-width 200px
   padding 10px 10px 10px 10px
   firstLevelElementsMargin 25
+  margin 0 0 15px 0
+
+  @media (min-width 650px)
+    flex-basis 40%
+    margin 0 10% 15% 0
 
   &__title
     font-size adapt-fsize(22, 18)
@@ -300,7 +302,9 @@ body
   background #000
 
   &__body
-    firstLevelElementsMargin 50
+    padding 4% 0 12% 0
+    firstLevelElementsMargin 30
+
     *
       color #fff
 
@@ -343,5 +347,211 @@ body
     font-family MyriadPro-sb
 
   &__position
+    font-size adapt-fsize(14)
+    font-style italic
+
+.contact
+  flex-set row nowrap
+
+  @media (max-width 1000px)
+    flex-set column-reverse nowrap
+
+  &__map
+    @media (max-width 1000px)
+      min-height 500px
+
+    flex-basis 60%
+    flex-grow 1
+
+    iframe
+      block-size 100%
+
+  &__body
+    padding 3% 3% 3% 3%
+    background #0f0fdb
+    firstLevelElementsMargin 20
+
+    *
+      color #fff
+
+    @media (min-width 1000px)
+      padding-right 17%
+      padding-left 7%
+
+    @media (max-width 1000px)
+      adaptive-property 'padding-right' 100 20
+      adaptive-property 'padding-left' 100 20
+
+  &__title
+    padding-left 20px
+
+    &:after
+      right -15px
+      width 90%
+      background #fff
+
+  &__address
+    firstLevelElementsMargin 30
+
+  &__socials
+    border-top 2px solid #fff
+    padding 10px 0 0 20px
+
+.contact-form
+  flex-set row wrap
+
+  &__input
+    background #2121d4
+    border 2px solid #fff
+    padding 10px 13px 10px 13px
+    margin 10px 0 10px 0
+    width 100%
+    font-family inherit
+
+    &::placeholder
+      font-family inherit
+      color #fff
+      opacity 1
+
+  &__phone
+    flex-basis 40%
+    margin-right auto
+
+  &__email
+    flex-basis 50%
+
+  &__input-message
+    height 75px
+    resize none
+    font-family inherit
+
+  &__submit
+    font-size adapt-fsize(18, 15)
+    margin-top 10px
+    padding 5px 30px 5px 30px
+    color #000
+    background #ffc600
+    text-transform uppercase
+    border 1px solid #ffc600
+    transition all 0.2s ease
+
+    &:hover, &:focus
+      border-color #ffc600
+      background #2121d4
+      color #ffc600
+
+    @media (max-width 426px)
+      flex-basis 100%
+
+.contact-address
+  &__body
+    padding 8% 5px 8% 5%
+    flex-set column nowrap
+    firstLevelElementsMargin 25
+
+  &__block
+    flex-set row nowrap
+
+  &__loc-map
+    font-family MyriadPro-sb
+    font-size adapt-fsize(18, 15)
+
+  &__content-name
+    font-family MyriadPro-sb
+    font-size adapt-fsize(18, 15)
+    width 80px
+    word-wrap break-word
+
+  &__content
+    padding 5px 5px 5px 5px
+    block-size max-content
+    font-size adapt-fsize(14)
+
+    &:hover, &:focus
+      opacity 0.8
+
+  &__phone
+    &:before
+      content '+'
+
+.blogs
+  &__body
+    flex-set row nowrap
+
+    @media (max-width 600px)
+      flex-set column nowrap
+
+  &__nav
+    flex-basis 30%
+    padding-right 25px
+
+  &__title
+    margin 0 0 15px 0
+
+    &:after
+      width 100%
+
+  &__content
+    flex-basis 70%
+    display grid
+    grid-template 'blog blog blog' auto / 1fr 1fr 1fr
+    gap 80px
+
+    @media (max-width 1000px)
+      grid-template 'blog blog' auto / 1fr 1fr
+      gap 40px
+
+    @media (max-width 500px)
+      grid-template 'blog' auto / 1fr
+      gap 20px
+
+.blog-nav
+  &__buttons
+    flex-set column nowrap
+    firstLevelElementsMargin 15
+
+    @media (min-width 1100px)
+      padding 0 0 0 10%
+
+    @media (max-width 600px)
+      firstLevelElementsMargin 0
+
+    @media (max-width 600px)
+      flex-set row wrap
+      margin 0 0 25px 0
+
+  &__button
+    text-align left
+    font-size adapt-fsize(20, 16)
+    padding 10px 10px 10px 10px
+    transition all 0.2s ease
+
+    @media (max-width 600px)
+      padding 15px 20px 15px 20px
+
+    &:hover, &:focus
+      color #ffc600
+
+.blogs-content
+  @media (max-width 600px)
+    text-align center
+
+  &__body
+    firstLevelElementsMargin 10
+
+  &__image
+    margin 0 0 5px 0
+    block-size 180 206
+
+  &__date
+    display inline-block
+    color #ffc600
+    font-size adapt-fsize(18, 15)
+
+  &__title
+    font-family MyriadPro-b
+    font-size adapt-fsize(16, 14)
+
+  &__text
     font-size adapt-fsize(14)
     font-style italic

@@ -19,6 +19,7 @@
     object-fit cover
 
 .logo
+  display inline-block
   font-family MyriadPro-sb
   font-size adapt-fsize(80, 30)
   color #000
@@ -26,8 +27,15 @@
 .yellow-text
   color #ffc600
 
-.big-word
-  font-size 150%
+.yellow-fl
+  display inline-block
+  &:first-letter
+    color #ffc600
+
+.big-fl
+  display inline-block
+  &:first-letter
+    font-size 150%
 
 .text-container
   font-family MyriadPro

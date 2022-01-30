@@ -24,9 +24,7 @@ export default class ScrollElement {
     let scrollButtons = document.querySelectorAll<HTMLElement>(scrollButtonsSelector);
 
     for (let scrollButton of scrollButtons) {
-      scrollButton.addEventListener('click', () => {
-        this.scrollToElement(scrollButton);
-      });
+      scrollButton.addEventListener('click', this.scrollToElement);
     }
     if (isNullOrWhiteSpaces(fixedHeaderSelector) == false) {
       let heightHeight = document.querySelector(fixedHeaderSelector).clientHeight;
@@ -35,8 +33,8 @@ export default class ScrollElement {
   }
 
 
-  private scrollToElement(scrollButton: HTMLElement) {
-    let scrollElement = document.querySelector(scrollButton.dataset.scrollTo);
+  private scrollToElement(this: HTMLElement) {
+    let scrollElement = document.querySelector(this.dataset.scrollTo);
 
     if (scrollElement == undefined) {
       throw new Error('[SCROLL-ELEMENTS] Something wrong with scrollElement!')

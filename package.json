@@ -28,7 +28,5 @@
     "gulp-util": "^3.0.8",
     "typescript": "^4.5.4"
   },
-  "dependencies": {
-    "swiper": "^7.4.1"
-  }
+  "dependencies": {}
 }

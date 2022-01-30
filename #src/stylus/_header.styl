@@ -26,27 +26,43 @@
     flex-set row wrap
     padding 0 5px 0 5px
 
+    @media (max-width 1300px)
+      flex-set column wrap
+      flex-content-position flex-start flex-start
+
     li
-      flex-set row nowrap
-      flex-content-position center center
-      transition all 0.2s ease 0s
+      position relative
+      font-size adapt-fsize(18, 15)
+      padding 10px 15px 10px 15px
+      color #ffc600
+      cursor pointer
+      transition all 0.2s ease
 
-      &:not(:last-child)
-        padding 0 35px 0 0
-
-      a
-        flex-set row nowrap
-        flex-content-position center center
-        flex 1 0 100%
-        block-size 100% 100%
-        font-size adapt-fsize(18)
-        padding 10px 10px 2px 10px
-        border-bottom 1px solid rgba(255, 255, 255, 0)
+      &:after
+        position absolute
+        bottom 10%
+        left 0
+        display inline-block
+        height 2px
+        width 100%
+        content ''
         transition all 0.2s ease
 
-        &:hover, &:focus
-          color #fff
-          border-bottom-color #ffc600
+      &:hover, &:focus
+        color #fff
+
+        @media (min-width: 426px)
+          &:after
+            background #ffc600
+
+      &:not(:last-child)
+        margin-right 35px
+
+      @media (max-width 426px)
+        background #000
+
+        
+        border-bottom 1px solid #ffc600
 
 .main-title
   display inline-block
@@ -54,3 +70,6 @@
   font-family MyriadPro-b
   color #fff
   line-height 0.9
+
+  :first-letter
+    color #ffc600

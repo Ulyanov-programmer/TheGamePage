@@ -1,12 +1,79 @@
 @import '_mixins'
 
 .footer
-  flex-set row nowrap
-  flex-content-position center center
-  min-height 100px
-  background rgb(99, 99, 99)
+  background #000
+  color #fff
 
-  // background: url('../img/') no-repeat center / cover
   &__body
-    a
+    flex-set row nowrap
+
+    @media (max-width 600px)
+      flex-set column-reverse nowrap
+
+    .logo
       color #fff
+
+  &__navmenu-container
+    flex-basis 20%
+    padding 20% 5% 10% 5%
+    firstLevelElementsMargin 50
+
+    @media (max-width 600px)
+      padding 10% 5% 10% 5%
+
+  &__nav
+    flex-set column nowrap
+    firstLevelElementsMargin 15
+    text-transform uppercase
+
+    @media (max-width 600px)
+      flex-content-position center center
+
+  &__li
+    display inline-block
+    cursor pointer
+    width max-content
+    padding 10px 20px 10px 0
+    transition: all 0.2s ease
+
+    &:hover, &:focus
+      color #ffc600
+
+    @media (max-width 600px)
+      padding 20px 30px
+
+    a
+      display inline-block
+      color #fff
+      transition all 0.2s ease
+
+      &:hover, &:focus
+        color #ffc600
+
+  &__socials
+    padding-top 15px
+    border-top 2px solid #ffc600
+
+    @media (min-width 600px)
+      width 50%
+    @media (max-width: 600px)
+      text-align center
+
+    a
+      display inline-block
+
+      &:not(:last-child)
+        margin 0 5px 0 0
+
+      @media (max-width 600px)
+        padding 15px 10px 15px 10px
+
+  &__bg
+    padding 10% 3% 10% 3%
+    flex-set row nowrap
+    flex-content-position flex-start flex-end
+    flex-basis 80%
+    background url('../img/main-bg-3.webp') no-repeat center / cover
+
+    .main-title
+      font-size adapt-fsize(110, 40)
